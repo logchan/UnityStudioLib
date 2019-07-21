@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityStudio", "UnityStudioLib\UnityStudio.csproj", "{97696198-D591-4D31-B468-B19834EBB913}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{098AFA82-ABEF-4562-A156-A00FDCFF7095}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -15,23 +13,43 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityStudio.Tests", "UnityStudio.Tests\UnityStudio.Tests.csproj", "{3F3585B7-DDCC-4E9F-8702-DE6CB41454FE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{D0A0840C-1A62-48DC-B37C-C51662998E11}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UnityStudioLib", "UnityStudioLib\UnityStudioLib.shproj", "{C215FA7A-CE63-4207-9E68-36312A098E40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityStudio.Net45", "build\UnityStudio.Net45\UnityStudio.Net45.csproj", "{784F40CA-578A-49F1-BE6F-BADA28BDF2D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityStudio.NetCoreApp22", "build\UnityStudio.NetCoreApp22\UnityStudio.NetCoreApp22.csproj", "{BA94BD7D-DD86-4B65-B8C8-5C2B80CCF9A3}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		UnityStudioLib\UnityStudioLib.projitems*{784f40ca-578a-49f1-be6f-bada28bdf2d7}*SharedItemsImports = 4
+		UnityStudioLib\UnityStudioLib.projitems*{c215fa7a-ce63-4207-9e68-36312a098e40}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{97696198-D591-4D31-B468-B19834EBB913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97696198-D591-4D31-B468-B19834EBB913}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97696198-D591-4D31-B468-B19834EBB913}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97696198-D591-4D31-B468-B19834EBB913}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3F3585B7-DDCC-4E9F-8702-DE6CB41454FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3F3585B7-DDCC-4E9F-8702-DE6CB41454FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F3585B7-DDCC-4E9F-8702-DE6CB41454FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F3585B7-DDCC-4E9F-8702-DE6CB41454FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{784F40CA-578A-49F1-BE6F-BADA28BDF2D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{784F40CA-578A-49F1-BE6F-BADA28BDF2D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{784F40CA-578A-49F1-BE6F-BADA28BDF2D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{784F40CA-578A-49F1-BE6F-BADA28BDF2D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA94BD7D-DD86-4B65-B8C8-5C2B80CCF9A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA94BD7D-DD86-4B65-B8C8-5C2B80CCF9A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA94BD7D-DD86-4B65-B8C8-5C2B80CCF9A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA94BD7D-DD86-4B65-B8C8-5C2B80CCF9A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{784F40CA-578A-49F1-BE6F-BADA28BDF2D7} = {D0A0840C-1A62-48DC-B37C-C51662998E11}
+		{BA94BD7D-DD86-4B65-B8C8-5C2B80CCF9A3} = {D0A0840C-1A62-48DC-B37C-C51662998E11}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EAC8F9DC-0E18-40E5-90CC-B8A92A426353}

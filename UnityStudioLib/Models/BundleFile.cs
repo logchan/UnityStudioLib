@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.IO.Compression;
 using System.Linq;
-using LZ4PCL;
+using K4os.Compression.LZ4;
+using K4os.Compression.LZ4.Streams;
 using UnityStudio.Extensions;
 
 namespace UnityStudio.Models {
@@ -68,7 +70,7 @@ namespace UnityStudio.Models {
 
             byte[] rawData;
             using (var compressedStream = new MemoryStream(compressedData, false)) {
-                using (var decoder = new LZ4Stream(compressedStream, CompressionMode.Compress)) {
+                using (var decoder = LZ4Stream.Decode(compressedStream)) {
                     rawData = new byte[uncompressedSize];
                     decoder.Read(rawData, 0, uncompressedSize);
                 }

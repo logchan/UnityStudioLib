@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>c215fa7a-ce63-4207-9e68-36312a098e40</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>UnityStudioLib</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)DescriptedEnumReflector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DisposableBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Endian.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EndianBinaryReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EndianBinaryWriter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EndianHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\AssetFileExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\AssetPlatformExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\AssetPreloadDataExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\BinaryReaderExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\StreamExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\TypeExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)External\Half.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)External\HalfHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)External\SevenZipHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ISimpleTypeConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MathHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AssetFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AssetFileEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AssetPlatform.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AssetPreloadData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BuildSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BundleFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ClassIDReference.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ClassMember.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CustomType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IAssetObjectContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\KnownClassID.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\SharedAssetInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\MonoBehaviourAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\MonoBehaviourIgnoreAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\MonoBehaviourPropertyAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\MonoBehaviourSerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\Naming\CamelCaseNamingConvention.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\Naming\INamingConvention.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\PopulationStrategy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SystemEndian.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\Animation\Avatar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\Animation\Hand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\Animation\Human.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\Animation\Skeleton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\Animation\SkeletonNode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\Animation\SkeletonPose.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\Matrix4x4.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\Mesh.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\MeshParts\AABB.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\MeshParts\BlendShapeData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\MeshParts\BlendShapeVertex.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\MeshParts\BoneInfluence.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\MeshParts\ChannelInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\MeshParts\MeshBlendShape.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\MeshParts\MeshBlendShapeChannel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\MeshParts\MeshTopology.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\MeshParts\PackedBitVector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\MeshParts\StreamInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\MeshParts\SubMesh.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\MonoBehaviour.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\PPtr.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\Quaternion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\TextAsset.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\Transform.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\Vector2.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\Vector3.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityEngine\Vector4.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\CompositeAvatar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\CompositeMesh.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\EnumerableUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\HashCode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\MemberSetter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\PropertyOrField.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\SimpleValueTuple`2.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\SimpleValueTuple`3.cs" />
+  </ItemGroup>
+</Project>
